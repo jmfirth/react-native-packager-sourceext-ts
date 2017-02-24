@@ -1,0 +1,25 @@
+{
+	"name": "TestTs",
+	"version": "0.0.1",
+	"private": true,
+	"scripts": {
+		"start": "node node_modules/react-native/local-cli/cli.js start --sourceExts js,ts,tsx --transformer ./transformer.js",
+		"test": "jest"
+	},
+	"dependencies": {
+		"@types/react": "^15.0.12",
+		"@types/react-native": "^0.37.13",
+		"react": "~15.4.0",
+		"react-native": "github:jmfirth/react-native#source_exts",
+		"typescript": "latest"
+	},
+	"devDependencies": {
+		"babel-jest": "19.0.0",
+		"babel-preset-react-native": "1.9.1",
+		"jest": "19.0.2",
+		"react-test-renderer": "~15.4.0"
+	},
+	"jest": {
+		"preset": "react-native"
+	}
+}
